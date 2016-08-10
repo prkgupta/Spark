@@ -394,7 +394,9 @@ AddDefaultCharset utf-8
     RewriteEngine On
     RewriteCond %{HTTPS} !=on
     RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-    RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+#    RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+    RewriteRule ^([a-z]+)/([a-z\-]+)$ /$1/$2.html [L]
+    RewriteRule ^([a-z]+)/([a-z\-]+)$ /$1/$2.php [L]
 </IfModule>
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
