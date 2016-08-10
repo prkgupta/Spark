@@ -1,0 +1,33 @@
+***SPARK*** 
+http://198.199.116.102/
+
+Team: Hirad Khakipour
+      Prakriti Gupta
+
+GitHub: https://github.com/prkgupta/Spark
+
+Login to webpage: username: user
+                  password: cs135
+
+--Webpage Status Errors--
+404 Error (occurs with any random page)
+403 Error (go to http://198.199.116.102/private)
+
+--Logs--
+We use GoAccess for our Logging.
+/var/log/apache2  
+
+--Compress Textual Content--
+Original size: 2935
+Compressed size: 1054
+File reduced by: 2 kb
+   
+--Obscure Server Identity--
+mod_security
+
+--Run PHP--
+Verify PHP: http://198.199.116.102/phpinfo.php
+
+--Deliver Clean URLS--
+mod_rewrite to remove file extensions
+
