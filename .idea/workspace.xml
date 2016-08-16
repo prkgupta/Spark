@@ -50,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/home.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+              <caret line="9" column="98" selection-start-line="9" selection-start-column="98" selection-end-line="9" selection-end-column="98" />
               <folding />
             </state>
           </provider>
@@ -221,7 +221,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1471143843721</updated>
-      <workItem from="1471143845039" duration="7771000" />
+      <workItem from="1471143845039" duration="7931000" />
     </task>
     <task id="LOCAL-00001" summary="First try for node">
       <created>1471297139342</created>
@@ -251,11 +251,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471369215607</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Node JS background color">
+      <created>1471369720555</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1471369720555</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7771000" />
+    <option name="totallyTimeSpent" value="7931000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
@@ -295,7 +302,8 @@
     <MESSAGE value="Node JS dynamic file" />
     <MESSAGE value="Node JS dynamic file 2nd try" />
     <MESSAGE value="Node JS dynamic file 3rd try" />
-    <option name="LAST_COMMIT_MESSAGE" value="Node JS dynamic file 3rd try" />
+    <MESSAGE value="Node JS background color" />
+    <option name="LAST_COMMIT_MESSAGE" value="Node JS background color" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -347,7 +355,7 @@
     <entry file="file://$PROJECT_DIR$/home.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+          <caret line="9" column="98" selection-start-line="9" selection-start-column="98" selection-end-line="9" selection-end-column="98" />
           <folding />
         </state>
       </provider>

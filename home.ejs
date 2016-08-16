@@ -7,7 +7,7 @@
 <body id="body">
 <script>
     var colors = ["blue", "red", "white"];
-    document.getElementById("body").style.backgroundColor = colors[(int)(Math.random() * 3)];
+    document.getElementById("body").style.backgroundColor = colors[Math.floor((Math.random() * 3))];
 </script>
 <h1>Hello Web World from Node JS on<%= Date() %></h1>
 
