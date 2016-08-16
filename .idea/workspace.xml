@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9c94323-56c0-4284-b969-17ae72fb66d2" name="Default" comment="Node JS background color 2nd try">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/env_variables.php" />
+    <list default="true" id="d9c94323-56c0-4284-b969-17ae72fb66d2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env_variables.php" afterPath="$PROJECT_DIR$/env_variables.php" />
     </list>
     <ignored path="Spark2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -222,7 +221,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1471143843721</updated>
-      <workItem from="1471143845039" duration="9072000" />
+      <workItem from="1471143845039" duration="9299000" />
     </task>
     <task id="LOCAL-00001" summary="First try for node">
       <created>1471297139342</created>
@@ -266,11 +265,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471369876564</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Environment Variables in PHP">
+      <created>1471371591928</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1471371591928</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9072000" />
+    <option name="totallyTimeSpent" value="9299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
@@ -312,7 +318,8 @@
     <MESSAGE value="Node JS dynamic file 3rd try" />
     <MESSAGE value="Node JS background color" />
     <MESSAGE value="Node JS background color 2nd try" />
-    <option name="LAST_COMMIT_MESSAGE" value="Node JS background color 2nd try" />
+    <MESSAGE value="Environment Variables in PHP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Environment Variables in PHP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

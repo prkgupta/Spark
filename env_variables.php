@@ -8,6 +8,10 @@
 
 <h1>Printing all the environment variables from PHP</h1>
 
+<?php
+echo 'My username is ' .$_ENV["USER"] . '!';
+?>
+
 <?php var_dump($_ENV) ?>
 
 </body>
