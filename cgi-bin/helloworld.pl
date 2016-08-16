@@ -1,4 +1,4 @@
-#!/usr/local/bin/perl
+#!/usr/bin/perl
 # helloworld.pl - My first CGI program
 
 print "Content-Type: text/html\n\n";

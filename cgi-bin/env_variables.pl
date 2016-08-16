@@ -1,4 +1,4 @@
-#!/usr/local/bin/perl
+#!/usr/bin/perl
 # env_variables.pl
 
 print "Content-Type: text/html\n\n";
