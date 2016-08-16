@@ -221,7 +221,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1471143843721</updated>
-      <workItem from="1471143845039" duration="9299000" />
+      <workItem from="1471143845039" duration="9502000" />
     </task>
     <task id="LOCAL-00001" summary="First try for node">
       <created>1471297139342</created>
@@ -272,11 +272,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471371591928</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Environment Variables in PHP 2nd try">
+      <created>1471371811144</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1471371811144</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9299000" />
+    <option name="totallyTimeSpent" value="9502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
@@ -319,7 +326,8 @@
     <MESSAGE value="Node JS background color" />
     <MESSAGE value="Node JS background color 2nd try" />
     <MESSAGE value="Environment Variables in PHP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Environment Variables in PHP" />
+    <MESSAGE value="Environment Variables in PHP 2nd try" />
+    <option name="LAST_COMMIT_MESSAGE" value="Environment Variables in PHP 2nd try" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

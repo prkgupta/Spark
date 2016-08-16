@@ -9,6 +9,7 @@
 <h1>Printing all the environment variables from PHP</h1>
 
 <?php
+phpinfo(INFO_ENVIRONMENT);
 echo 'My username is ' .$_ENV["USER"] . '!';
 ?>
 
