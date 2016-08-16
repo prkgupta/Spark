@@ -4,9 +4,19 @@
 //var http = require('http');
 var express = require('express');
 var app = express();
+var bodyParser = require("body-parser");
+
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/node", function (req,res) {
     res.render("../home.ejs");
+});
+
+app.post("/form", function (req,res){
+    var fname = req.body.fname;
+    var lname = req.body.lname;
+    var color = req.body.color;
+    res.render("../form.ejs",{fname:fname, lname:lname, color:color});
 });
 
 app.get("/env", function(req,res){

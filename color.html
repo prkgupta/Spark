@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Spark - Team Members</title>
+        <title>Form PHP</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -32,46 +32,45 @@
           </button>
           <a class="navbar-brand" href="index.html">CSE 135 -- HW 2</a>
         </div>
-        <!--<div id="navbar" class="navbar-collapse collapse">-->
-          <!--<form class="navbar-form navbar-right" role="form">-->
-            <!--<div class="form-group">-->
-              <!--<input type="text" placeholder="Email" class="form-control">-->
-            <!--</div>-->
-            <!--<div class="form-group">-->
-              <!--<input type="password" placeholder="Password" class="form-control">-->
-            <!--</div>-->
-            <!--<button type="submit" class="btn btn-success">Sign in</button>-->
-          <!--</form>-->
-        <!--</div>&lt;!&ndash;/.navbar-collapse &ndash;&gt;-->
       </div>
     </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-      <div class="container">
-	  <h1>SPARK</h1>
-  <form action="color.php" method="post">
-    <div class="form-group">
-      <label for="firstname">First Name:</label>
-      <input type="text" name="fname" placeholder="Enter first name">
-    </div>
-    <div class="form-group">
-      <label for="lastname">Last Name:</label>
-      <input type="text" name="lname" placeholder="Enter last name">
-    </div>
+        <div class="container">
+            <h1>SPARK</h1>
+            <form action="color.php" method="post" id="form">
+                <div class="form-group">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter first name">
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Enter last name">
+                </div>
 
-     <div class="form-group">
-  <label for="color">Select color:</label>
-  <select class="form-control" name="color">
-    <option>red</option>
-    <option>blue</option>
-    <option>green</option>
-    <option>yellow</option>
-  </select>
-</div>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
-      </div>
+                <div class="form-group">
+                    <label for="color">Select color:</label>
+                    <select class="form-control" id="color" name="color">
+                        <option>red</option>
+                        <option>blue</option>
+                        <option>green</option>
+                        <option>yellow</option>
+                     </select>
+                </div>
+                <div class="form-group">
+                    <label for="lang">Select backend technology:</label>
+                    <select class="form-control" id="lang" name="lang" onchange="changeSubmit();">
+                        <option value="1">PHP</option>
+                        <option value="2">CGI with Perl</option>
+                        <option value="3">Node JS</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="submit" class="btn btn-default">Submit</button>
+                <script src="js/main.js"></script>
+            </form>
+        </div>
     </div>
 
     <div class="container">
@@ -83,6 +82,6 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+
     </body>
 </html>
