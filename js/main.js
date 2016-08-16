@@ -4,7 +4,7 @@ var lang = document.getElementById("lang");
 function changeSubmit(){
     switch (lang.value) {
         case "2":
-            form.action="color.pl";
+            form.action="cgi-bin/color.pl";
             break;
         case "3":
             form.action="http://198.199.116.102:8000/form";
