@@ -10,7 +10,7 @@
 
 <?php
 phpinfo(INFO_ENVIRONMENT);
-echo 'My username is ' .$_ENV["USER"] . '!';
+echo 'My username is ' .$_ENV["PATH"] . '!';
 ?>
 
 <?php var_dump($_ENV) ?>
