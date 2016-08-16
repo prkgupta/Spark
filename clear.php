@@ -13,6 +13,9 @@ session_start();
 
 session_unset();
 session_destroy();
+
+header("Location:http://198.199.116.102/session2.html");
+
 ?>
 </body>
 </html>
