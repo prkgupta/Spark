@@ -8,6 +8,10 @@ var app = express();
 app.get("/node", function (req,res) {
     res.render("../home.ejs");
 });
+
+app.get("/env", function(req,res){
+    res.send(process.env);
+});
 app.listen(8000,'198.199.116.102',function () {
     console.log("Server is running");
 });
