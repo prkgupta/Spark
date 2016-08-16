@@ -8,6 +8,11 @@
 
 <h1>Printing all the environment variables from PHP</h1>
 
+<?php
+phpinfo(INFO_ENVIRONMENT);
+echo 'My path is adasd ' .$_ENV["PATH"] . '!';
+?>
+
 <?php var_dump($_ENV) ?>
 
 </body>
