@@ -7,7 +7,7 @@ function changeSubmit(){
             form.action="color.pl";
             break;
         case "3":
-            form.action="/form";
+            form.action="http://198.199.116.102:8000/form";
             break;
         default:
             form.action="color.pl";
