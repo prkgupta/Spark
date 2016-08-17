@@ -8,9 +8,6 @@ use CGI::Carp qw(fatalsToBrowser);
 
 my $q = new CGI;
 
-$fname = $q->param('fname');
-$lname = $q->param('lname');
-$color = $q->param('color');
 print "Content-Type: text/html\n\n";
 # Note there is a newline between 
 # this header and Data
@@ -20,9 +17,11 @@ print "Content-Type: text/html\n\n";
 print "<html> <head>\n";
 print "<title>Post Request in Perl!</title>";
 print "</head>\n";
-#@colors = ("blue", "white", "red");
-#$num = int rand(3);
-#print "<body style=\"background-color:$colors[$num]\"">\n";
+
+$fname = $q->param('fname');
+$lname = $q->param('lname');
+$color = $q->param('color');
+
 print "<body>\n";
 $datestring = localtime();
 print "<h1>Hello $fname $lname from $datestring!</h1>\n";
