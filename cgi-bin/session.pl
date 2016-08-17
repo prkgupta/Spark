@@ -38,7 +38,11 @@ if( $sFname eq "" || $sLname eq ""){
   print "<h1>Howdy stranger...tell me your name on page1!</h1>";
 } 
 else{
-  print "<h1>Hi $sFname $sLname nice to meet you!</h1>";
+  print "<h1>Hi $sFname $sLname nice to meet you!</h1>\n";
 }
+print("<a href=\"session1.html\" role=\"button\">Go to Page 1</a>\n");
+<a class="btn btn-primary" 
+href="session1.html" role="button">Go to Page 1</a>
+
 #print submit('button_name','value');
 print "</body> </html>\n";
