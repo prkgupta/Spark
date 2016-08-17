@@ -13,21 +13,17 @@ Login to webpage: username: user
 404 Error (occurs with any random page)
 403 Error (go to http://198.199.116.102/private)
 
---Logs--
-We use GoAccess for our Logging.
-/var/log/apache2  
+We implemented all the Node JS parts, even though they are not going to be graded. The node server is running. If for
+some reason it stops running it can be ran again using the command "node /var/www/html/js/app.js "
 
---Compress Textual Content--
-Original size: 2935
-Compressed size: 1054
-File reduced by: 2 kb
-   
---Obscure Server Identity--
-mod_security
+We used ejs (embedded Javascript) files for all the node views to combine html and backend javascript.
 
---Run PHP--
-Verify PHP: http://198.199.116.102/phpinfo.php
+Part 1: We used the corresponding date() function for every language to display current time. Random background color
+is generated using a random number generator from 0 to 2 and assign a color for each number.
 
---Deliver Clean URLS--
-mod_rewrite to remove file extensions
+Part 2: All languages have a variable consisting of all the environment variables.
+
+Part 3: Each part of our form has a field name that can be used in the backend to retrieve their values from the post
+request. The last dropdown menu chooses which of the 3 languages (Perl, PHP, JS) is used to display the user's info. Our
+frontend script is located at js/main.js.
 
