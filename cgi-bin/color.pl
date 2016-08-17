@@ -6,7 +6,7 @@ use warnings;
 use CGI;
 use CGI::Carp qw(fatalsToBrowser);
 
-my $q = new CGI;
+my $q = CGI->new;
 
 print "Content-Type: text/html\n\n";
 # Note there is a newline between 
@@ -18,11 +18,12 @@ print "<html> <head>\n";
 print "<title>Post Request in Perl!</title>";
 print "</head>\n";
 
-$fname = $q->param('fname');
-$lname = $q->param('lname');
-$color = $q->param('color');
+my $fname = $q->param('fname');
+my $lname = $q->param('lname');
+my $color = $q->param('color');
 
 print "<body>\n";
-$datestring = localtime();
+my $datestring = localtime();
 print "<h1>Hello $fname $lname from $datestring!</h1>\n";
+print "<body style=\"background-color: $color \">\n";
 print "</body> </html>\n";
