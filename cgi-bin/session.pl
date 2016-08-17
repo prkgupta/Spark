@@ -41,8 +41,6 @@ else{
   print "<h1>Hi $sFname $sLname nice to meet you!</h1>\n";
 }
 print("<a href=\"session1.html\" role=\"button\">Go to Page 1</a>\n");
-<a class="btn btn-primary" 
-href="session1.html" role="button">Go to Page 1</a>
 
 #print submit('button_name','value');
 print "</body> </html>\n";
