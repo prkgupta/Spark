@@ -12,8 +12,10 @@ print "<title>Hello world in Perl!</title>";
 print "</head>\n";
 @colors = ("blue", "white", "red");
 $num = int rand(3);
+print $num
 #print "<body style=\"background-color:$colors[$num]\"">\n";
 print "<body>\n";
+#print "<h1> $colors[$num] </h1>"
 $datestring = localtime();
 print "<h1>Hello, world from $datestring!</h1>\n";
 print "</body> </html>\n";
