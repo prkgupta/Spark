@@ -40,7 +40,7 @@ if( $sFname eq "" || $sLname eq ""){
 else{
   print "<h1>Hi $sFname $sLname nice to meet you!</h1>\n";
 }
-print("<a href=\"session1.html\" role=\"button\">Go to Page 1</a>\n");
+print("<a href=\"../session1.html\" role=\"button\">Go to Page 1</a>\n");
+print("<button type=\"button\" id=\"clear\">Clear Session</button>\n");
 
-#print submit('button_name','value');
 print "</body> </html>\n";
