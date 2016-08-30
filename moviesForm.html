@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add A New Movie To The Database</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">CSE 135 -- HW 2</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>SPARK</h1>
+            <form action="color.php" method="post" class="form-horizontal" id="form">
+                <div class="form-group">
+                    <label for="movieTitle" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Title:</label>
+                    <input type="text" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="movieTitle" name="movieTitle" placeholder="Avatar">
+                </div>
+                <div class="form-group">
+                    <label for="studio" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Studio:</label>
+                    <input type="text" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="studio" name="studio" placeholder="Fox">
+                </div>
+                <div class="form-group">
+                    <label for="year" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Year:</label>
+                    <input type="text" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="year" name="year" placeholder="2009">
+                </div>
+                <div class="form-group">
+                    <label for="boxOffice" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Box Office$:</label>
+                    <input type="text" id="boxOffice" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" name="boxOffice" placeholder="$2778.0">
+                </div>
+                <div class="form-group row">
+                    <label for="poster" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Poster URL:</label>
+                    <input type="text" id="poster" name="poster" class="col-lg-6 col-md-6 col-sm-8 col-xs-10"
+                           placeholder="https://www.movieposter.com/posters/archive/main/98/MPW-49246">
+                </div>
+                <button type="submit" id="submit" class="btn btn-default">Add</button>
+                <script src="js/main.js"></script>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer>
+            <p>&copy; Spark 2016</p>
+        </footer>
+    </div>
+
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+
+</body>
+</html>

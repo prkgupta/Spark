@@ -22,11 +22,16 @@ app.post("/form", function (req,res){
 app.get("/env", function(req,res){
     res.send(process.env);
 });
+
+// hw3 routes
+app.get("/movies", function(req,res){
+   res.send("Movies route is working");
+});
+
+app.get("/movies/new", function (req,res) {
+    res.render("../moviesForm.html");
+});
+
 app.listen(8000,'198.199.116.102',function () {
     console.log("Server is running");
 });
-// http.createServer(function (req, res) {
-//     res.writeHead(200, {'Content-Type': 'text/plain'});
-//     //res.end('Hello Apache!\n');
-//
-// }).listen(8000, '198.199.116.102');
