@@ -1,7 +1,6 @@
 /**
  * Created by Hirad on 8/14/2016.
  */
-//var http = require('http');
 var express = require('express');
 var app = express();
 var bodyParser = require("body-parser");
@@ -29,7 +28,7 @@ app.get("/movies", function(req,res){
 });
 
 app.get("/movies/new", function (req,res) {
-    res.render("../moviesForm.html");
+    res.sendFile("../moviesForm.html");
 });
 
 app.listen(8000,'198.199.116.102',function () {
