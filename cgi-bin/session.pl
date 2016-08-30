@@ -41,6 +41,6 @@ else{
   print "<h1>Hi $sFname $sLname nice to meet you!</h1>\n";
 }
 print("<a href=\"../session1.html\" role=\"button\">Go to Page 1</a>\n");
-print("<button type=\"button\" id=\"clear\">Clear Session</button>\n");
+print("<button type=\"button\" id=\"clear\" onclick=\"clear.pl\">Clear Session</button>\n");
 
 print "</body> </html>\n";
