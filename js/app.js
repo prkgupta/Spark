@@ -1,9 +1,10 @@
 /**
  * Created by Hirad on 8/14/2016.
  */
-var express = require('express');
-var app = express();
-var bodyParser = require("body-parser");
+var express     = require('express');
+var app         = express();
+var bodyParser  = require("body-parser");
+var path        = require("path");
 
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -28,7 +29,7 @@ app.get("/movies", function(req,res){
 });
 
 app.get("/movies/new", function (req,res) {
-    res.sendFile("../moviesForm.html");
+    res.sendFile(path.join(__dirname + "../moviesForm.html");
 });
 
 app.listen(8000,'198.199.116.102',function () {
