@@ -29,7 +29,7 @@ app.get("/movies", function(req,res){
 });
 
 app.get("/movies/new", function (req,res) {
-    res.sendFile(path.join(__dirname + "../moviesForm.html");
+    res.sendFile(path.join(__dirname.substring(0,__dirname.length - 2) + "moviesForm.html"));
 });
 
 app.listen(8000,'198.199.116.102',function () {
