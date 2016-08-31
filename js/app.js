@@ -32,9 +32,9 @@ app.get("/movies", function(req,res){
 app.use(express.static('./public'));
 
 app.get("/movies/new", function (req,res) {
-    //res.sendFile(path.join(__dirname.substring(0,__dirname.length - 2) + "moviesForm.html"));
-    //res.render("/var/www/html/moviesForm.html");
-    res.render("/var/www/html/public/moviesForm.html");
+    //res.sendFile(path.join(__dirname.substring(0,__dirname.length - 2) + "moviesForm.ejs"));
+    //res.render("/var/www/html/moviesForm.ejs");
+    res.render("/var/www/html/public/moviesForm.ejs");
 });
 
 app.listen(8000,'198.199.116.102',function () {
