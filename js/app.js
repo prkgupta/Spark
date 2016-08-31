@@ -48,11 +48,9 @@ app.get("/movies", function(req,res){
         if (error) {
             console.log(error.message);
         } else {
-            console.log(result);
+            res.render("../public/movies.ejs", {results: result});
         }
-        res.render("../public/movies.ejs", {results: result});
     });
-
 });
 
 // // Serve static files
@@ -74,14 +72,6 @@ app.post("/movies", function(req,res){
 
     var problem   = false;
 
-
-    // connection.query('SELECT * from < table name >', function(err, rows, fields) {
-    //     if (!err)
-    //         console.log('The solution is: ', rows);
-    //     else
-    //         console.log('Error while performing Query.');
-    // });
-
     //data validation TODO
     if(record.year.length != 4 || isNaN(record.year))
         res.send("Please input a 4-digit number for year.");
@@ -98,6 +88,18 @@ app.post("/movies", function(req,res){
     });
 
     res.redirect("/movies");
+});
+
+app.get("/movies/:id/edit", function (req,res) {
+    var id = req.params.id;
+    connection.query('SELECT * FROM movie_list WHERE movie_id=' + id, function(error, result, fields) {
+        if (error) {
+            console.log(error.message);
+        } else {
+            res.render("../public/moviesForm.ejs",{results:result});
+        }
+    });
+
 });
 
 app.listen(8000,'198.199.116.102',function () {

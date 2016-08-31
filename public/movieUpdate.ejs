@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit a movie in the database</title>
+    <!--<link rel="stylesheet" href="/var/www/html/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="/var/www/html/css/bootstrap-theme.min.css">-->
+    <!--<link rel="stylesheet" href="../css/main.css">-->
+    <link rel="stylesheet" href="http://198.199.116.102/css/main.css">
+    <!--<script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="http://198.199.116.102">CSE 135 -- HW 2</a>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>SPARK</h1>
+        <form action="http://198.199.116.102:8000/movies/<%=results.id%>/edit" method="post" class="form-horizontal" id="form">
+            <div class="form-group">
+                <label for="title" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Title:</label>
+                <input type="text" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="title" name="title"
+                       placeholder="<%=results.title%>" value="<%=results.title%>">
+            </div>
+            <div class="form-group">
+                <label for="studio" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Studio:</label>
+                <input type="text" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="studio" name="studio"
+                       placeholder="<%=results.studio%>" value="<%=results.studio%>">
+            </div>
+            <div class="form-group">
+                <label for="year" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Year:</label>
+                <input type="number" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="year" name="year"
+                       placeholder="<%=results.year%>" value="<%=results.year%>">
+            </div>
+            <div class="form-group">
+                <label for="boxOffice" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Box Office$:</label>
+                <input type="number" min="0.01" step="0.01" max="100000" id="boxOffice" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" name="boxOffice"
+                       placeholder="<%=results.boxOffice%>" value="<%=results.boxOffice%>">
+            </div>
+            <div class="form-group row">
+                <label for="poster" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Poster URL:</label>
+                <input type="text" id="picture" name="picture" class="col-lg-6 col-md-6 col-sm-8 col-xs-10"
+                       placeholder="<%=results.picture%>" value="<%=results.picture%>">
+            </div>
+            <p id="note">Box Office Value is in million dollars.</p>
+            <button type="submit" id="submit" class="btn btn-primary">Update</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <footer>
+        <p>&copy; Spark 2016</p>
+    </footer>
+</div>
+
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+<script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="../js/vendor/bootstrap.min.js"></script>
+
+
+</body>
+</html>
