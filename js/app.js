@@ -5,6 +5,23 @@ var express     = require('express');
 var app         = express();
 var bodyParser  = require("body-parser");
 var path        = require("path");
+var mysql       = require('mysql');
+var connection  = mysql.createConnection({
+    host     : '198.199.116.102',
+    port     : 3306,
+    user     : 'root',
+    password : 'pass',
+    database : 'movies'
+});
+
+connection.connect();
+
+// connection.query('SELECT * from < table name >', function(err, rows, fields) {
+//     if (!err)
+//         console.log('The solution is: ', rows);
+//     else
+//         console.log('Error while performing Query.');
+// });
 
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -38,12 +55,35 @@ app.get("/movies/new", function (req,res) {
 });
 
 app.post("/movies", function(req,res){
-    var title     = req.body.title;
-    var studio    = req.body.studio;
-    var year      = req.body.year;
-    var boxOffice = req.body.boxOffice;
-    var poster    = req.body.poster;
+    var record ={
+        title     : req.body.title,
+        studio    : req.body.studio,
+        year      : req.body.year,
+        boxOffice : req.body.boxOffice,
+        poster    : req.body.poster
+    };
+
+    // var title     = req.body.title;
+    // var studio    = req.body.studio;
+    // var year      = req.body.year;
+    // var boxOffice = req.body.boxOffice;
+    // var poster    = req.body.poster;
     var problem   = false;
+
+    connection.query('INSERT INTO movie_list SET ?', record, function(error) {
+        if (error) {
+            console.log(error.message);
+        } else {
+            console.log('success');
+        }
+    });
+
+    // connection.query('SELECT * from < table name >', function(err, rows, fields) {
+    //     if (!err)
+    //         console.log('The solution is: ', rows);
+    //     else
+    //         console.log('Error while performing Query.');
+    // });
 
     //data validation TODO
     if(year.length != 4 || isNaN(year))
@@ -52,7 +92,7 @@ app.post("/movies", function(req,res){
     if(isNaN(boxOffice))
         res.send("Please input a number for boxOffice. (With no $)");
 
-    res.redirect("/movies");
+    //res.redirect("/movies");
 });
 
 app.listen(8000,'198.199.116.102',function () {
