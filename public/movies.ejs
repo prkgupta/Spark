@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="http://198.199.116.102/css/main.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -30,17 +32,21 @@
                 <th>Poster</th>
                 <th>Update</th>
             </tr>
-            <% var i = 0; results.forEach(function (record) { %>
-            <tr>
-                <th><%= ++i %></th>
-                <th><%= record.title %></th>
-                <th><%= record.studio %></th>
-                <th><%= record.boxOffice %></th>
-                <th><%= record.year %></th>
-                <th><img class="poster" src="<%=record.picture%>" alt="<%=record.title%>"></th>
-                <th><button type="button" class="updateButton">Update</button></th>
-            </tr>
-            <%});%>
+            <tbody>
+                <% var i = 0; results.forEach(function (record) { %>
+                <tr id="row<%=i+1%>">
+                    <td><%= ++i %></td>
+                    <td><%= record.title %></td>
+                    <td><%= record.studio %></td>
+                    <td><%= record.boxOffice %></td>
+                    <td><%= record.year %></td>
+                    <td><img class="poster" src="<%=record.picture%>" alt="<%=record.title%>"></td>
+                    <td><button type="button" class="updateButton">Update</button></td>
+                    <td style="display:none"><%=record.movie_id%></td>
+                </tr>
+                <%});%>
+            </tbody>
+
         </table>
     </div>
 </div>
