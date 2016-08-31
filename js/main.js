@@ -29,7 +29,7 @@ function changeSubmitForSession(){
     }
 }
 
-$('updateButton').click(function(){
+$('.updateButton').click(function(){
     var id = $(this).next().value;
     location.href="http://198.199.116.102:8000/movies/" + id + "/edit";
 });
