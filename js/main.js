@@ -30,6 +30,7 @@ function changeSubmitForSession(){
 }
 
 $('.updateButton').click(function(){
+    console.log("button is clicked");
     var id = $(this).next().value;
     location.href="http://198.199.116.102:8000/movies/" + id + "/edit";
 });
