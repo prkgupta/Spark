@@ -60,7 +60,7 @@ app.post("/movies", function(req,res){
         studio    : req.body.studio,
         year      : req.body.year,
         boxOffice : req.body.boxOffice,
-        poster    : req.body.poster
+        picture    : req.body.picture
     };
 
     // var title     = req.body.title;
