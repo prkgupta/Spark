@@ -30,14 +30,14 @@
                 <th>Poster</th>
                 <th>Update</th>
             </tr>
-            <% var i = 0; result.forEach(function () { %>
+            <% var i = 0; results.forEach(function (record) { %>
             <tr>
-                <th><%= i++ %></th>
-                <th><%= result.title %></th>
-                <th><%= result.studio %></th>
-                <th><%= result.boxOffice %></th>
-                <th><%= result.year %></th>
-                <th><img src="<%=result.picture%>" alt="<%=result.title%>"></th>
+                <th><%= ++i %></th>
+                <th><%= record.title %></th>
+                <th><%= record.studio %></th>
+                <th><%= record.boxOffice %></th>
+                <th><%= record.year %></th>
+                <th><img src="<%=record.picture%>" alt="<%=record.title%>"></th>
                 <th><button type="button" class="updateButton">Update</button></th>
             </tr>
             <%});%>

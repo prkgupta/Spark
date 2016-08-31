@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d9c94323-56c0-4284-b969-17ae72fb66d2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/movies.ejs" afterPath="$PROJECT_DIR$/public/movies.ejs" />
     </list>
@@ -40,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="52" column="47" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="50" />
+              <caret line="52" column="59" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -49,8 +48,8 @@
       <file leaf-file-name="movies.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/movies.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+            <state relative-caret-position="306">
+              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -151,8 +150,8 @@
         <option value="$PROJECT_DIR$/public/moviesForm.ejs" />
         <option value="$PROJECT_DIR$/color.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/public/movies.ejs" />
       </list>
     </option>
@@ -356,14 +355,7 @@
       <workItem from="1471143845039" duration="29212000" />
       <workItem from="1472431152211" duration="9722000" />
       <workItem from="1472598276925" duration="12003000" />
-      <workItem from="1472662896505" duration="7988000" />
-    </task>
-    <task id="LOCAL-00016" summary="Environment variables">
-      <created>1471372667367</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1471372667367</updated>
+      <workItem from="1472662896505" duration="8304000" />
     </task>
     <task id="LOCAL-00017" summary="Environment variables in node">
       <created>1471373604680</created>
@@ -701,11 +693,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472671985778</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="showing the movies in a table">
+      <created>1472672818734</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1472672818734</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58925000" />
+    <option name="totallyTimeSpent" value="59241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
@@ -1067,14 +1066,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="52" column="47" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/moviesForm.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -1091,10 +1082,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="52" column="59" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/movies.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        <state relative-caret-position="306">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
           <folding />
         </state>
       </provider>
