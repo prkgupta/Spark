@@ -7,7 +7,7 @@ var bodyParser  = require("body-parser");
 var path        = require("path");
 var mysql       = require('mysql');
 var connection  = mysql.createConnection({
-    host     : '198.199.116.102',
+    host     : 'localhost',
     port     : 3306,
     user     : 'root',
     password : 'root',
@@ -70,13 +70,6 @@ app.post("/movies", function(req,res){
     // var poster    = req.body.poster;
     var problem   = false;
 
-    connection.query('INSERT INTO movie_list SET ?', record, function(error) {
-        if (error) {
-            console.log(error.message);
-        } else {
-            console.log('success');
-        }
-    });
 
     // connection.query('SELECT * from < table name >', function(err, rows, fields) {
     //     if (!err)
@@ -86,11 +79,19 @@ app.post("/movies", function(req,res){
     // });
 
     //data validation TODO
-    if(year.length != 4 || isNaN(year))
+    if(record.year.length != 4 || isNaN(record.year))
         res.send("Please input a 4-digit number for year.");
 
-    if(isNaN(boxOffice))
+    if(isNaN(record.boxOffice))
         res.send("Please input a number for boxOffice. (With no $)");
+
+    connection.query('INSERT INTO movie_list SET ?', record, function(error) {
+        if (error) {
+            console.log(error.message);
+        } else {
+            console.log('success');
+        }
+    });
 
     //res.redirect("/movies");
 });

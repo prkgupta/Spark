@@ -5,7 +5,7 @@
     <title>Add A New Movie To The Database</title>
     <!--<link rel="stylesheet" href="/var/www/html/css/bootstrap.min.css">-->
     <!--<link rel="stylesheet" href="/var/www/html/css/bootstrap-theme.min.css">-->
-    <!--<link rel="stylesheet" href="/var/www/html/css/main.css">-->
+    <link rel="stylesheet" href="../css/main.css">
     <!--<script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -34,26 +34,30 @@
             <form action="http://198.199.116.102:8000/movies" method="post" class="form-horizontal" id="form">
                 <div class="form-group">
                     <label for="movieTitle" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Title:</label>
-                    <input type="text" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="movieTitle" name="movieTitle" placeholder="Avatar">
+                    <input type="text" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="movieTitle" name="movieTitle"
+                           placeholder="Avatar" required>
                 </div>
                 <div class="form-group">
                     <label for="studio" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Studio:</label>
-                    <input type="text" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="studio" name="studio" placeholder="Fox">
+                    <input type="text" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="studio" name="studio"
+                           placeholder="Fox" required>
                 </div>
                 <div class="form-group">
                     <label for="year" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Year:</label>
-                    <input type="text" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="year" name="year" placeholder="2009">
+                    <input type="number" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="year" name="year"
+                           placeholder="2009" required>
                 </div>
                 <div class="form-group">
                     <label for="boxOffice" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Box Office$:</label>
-                    <input type="text" id="boxOffice" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" name="boxOffice"
-                           placeholder="$2778.0 (Don't input the dollar sign)">
+                    <input type="number" min="0.01" step="0.01" max="100000" id="boxOffice" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" name="boxOffice"
+                           placeholder="2778.0 (No dollar sign, no commas)">
                 </div>
                 <div class="form-group row">
                     <label for="poster" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Poster URL:</label>
                     <input type="text" id="poster" name="poster" class="col-lg-6 col-md-6 col-sm-8 col-xs-10"
                            placeholder="https://www.movieposter.com/posters/archive/main/98/MPW-49246">
                 </div>
+                <p id="note">Box Office Value is in million dollars.</p>
                 <button type="submit" id="submit" class="btn btn-primary">Add</button>
             </form>
         </div>
