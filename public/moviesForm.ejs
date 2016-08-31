@@ -31,7 +31,7 @@
     <div class="jumbotron">
         <div class="container">
             <h1>SPARK</h1>
-            <form action="../color.php" method="post" class="form-horizontal" id="form">
+            <form action="http://198.199.116.102:8000/movies" method="post" class="form-horizontal" id="form">
                 <div class="form-group">
                     <label for="movieTitle" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Title:</label>
                     <input type="text" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="movieTitle" name="movieTitle" placeholder="Avatar">
@@ -46,15 +46,15 @@
                 </div>
                 <div class="form-group">
                     <label for="boxOffice" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Box Office$:</label>
-                    <input type="text" id="boxOffice" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" name="boxOffice" placeholder="$2778.0">
+                    <input type="text" id="boxOffice" class="col-lg-4 col-md-4 col-sm-4 col-xs-4" name="boxOffice"
+                           placeholder="$2778.0 (Don't input the dollar sign)">
                 </div>
                 <div class="form-group row">
                     <label for="poster" class="col-lg-2 col-md-2 col-sm-2 col-xs-2">Poster URL:</label>
                     <input type="text" id="poster" name="poster" class="col-lg-6 col-md-6 col-sm-8 col-xs-10"
                            placeholder="https://www.movieposter.com/posters/archive/main/98/MPW-49246">
                 </div>
-                <button type="submit" id="submit" class="btn btn-default">Add</button>
-                <script src="../js/main.js"></script>
+                <button type="submit" id="submit" class="btn btn-primary">Add</button>
             </form>
         </div>
     </div>

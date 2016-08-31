@@ -37,6 +37,24 @@ app.get("/movies/new", function (req,res) {
     res.render("../public/moviesForm.ejs");
 });
 
+app.post("/movies", function(req,res){
+    var title     = req.body.title;
+    var studio    = req.body.studio;
+    var year      = req.body.year;
+    var boxOffice = req.body.boxOffice;
+    var poster    = req.body.poster;
+    var problem   = false;
+
+    //data validation TODO
+    if(year.length != 4 || isNaN(year))
+        res.send("Please input a 4-digit number for year.");
+
+    if(isNaN(boxOffice))
+        res.send("Please input a number for boxOffice. (With no $)");
+
+    res.redirect("/movies");
+});
+
 app.listen(8000,'198.199.116.102',function () {
     console.log("Server is running");
 });
