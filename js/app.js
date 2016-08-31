@@ -50,7 +50,7 @@ app.get("/movies", function(req,res){
         } else {
             console.log(result);
         }
-        res.render("../public/movies.ejs", {record: result});
+        res.render("../public/movies.ejs", {result: result});
     });
 
 });
