@@ -99,9 +99,31 @@ app.get("/movies/:id/edit", function (req,res) {
             res.render("../public/moviesUpdates.ejs",{results:result});
         }
     });
-
 });
 
+app.put("/movies/:id/", function (req,res) {
+    var id        = req.params.id;
+    var title     = req.params.title;
+    var studio    = req.params.studio;
+    var year      = req.params.year;
+    var boxOffice = req.params.boxOffice;
+    var picture   = req.params.picture;
+
+    var sqlQuery =
+          ' UPDATE movie_list'
+        + ' SET title=' + title + ',studio=' + studio + ' ,year=' + year + ', boxOffice=' + boxOffice + ' ,picture=' + picture
+        + ' WHERE movie_id=' + id;
+
+    connection.query(sqlQuery, function(error, result, fields) {
+        if (error) {
+            console.log(error.message);
+        } else {
+            console.log('success');
+        }
+    });
+
+    res.redirect("/movies")
+});
 app.listen(8000,'198.199.116.102',function () {
     console.log("Server is running");
 });
