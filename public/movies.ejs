@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="http://198.199.116.102">CSE 135 -- HW 2</a>
+        </div>
+    </div>
+</nav>
+<table class="table table-striped">
+    <tr>
+        <th>Rank</th>
+        <th>Title</th>
+        <th>Studio</th>
+        <th>Box Office</th>
+        <th>Year</th>
+        <th>Poster</th>
+        <th>Update</th>
+    </tr>
+    <% var i = 0; record.forEach(function () { %>
+        <tr>
+            <th><%= i++ %></th>
+            <th><%= record.title %></th>
+            <th><%= record.studio %></th>
+            <th><%= record.boxOffice %></th>
+            <th><%= record.year %></th>
+            <th><img src="<%=record.picture%>" alt="<%=record.title%>"></th>
+            <th><button type="button" class="updateButton">Update</button></th>
+        </tr>
+    <%});%>
+</table>
+
+
+</body>
+</html>

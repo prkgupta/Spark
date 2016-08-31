@@ -42,15 +42,24 @@ app.get("/env", function(req,res){
 
 // hw3 routes
 app.get("/movies", function(req,res){
-   res.send("Movies route is working");
+   //res.send("Movies route is working");
+    //Get the data from the database
+    connection.query('SELECT * FROM movie_list', function(error, result, fields) {
+        if (error) {
+            console.log(error.message);
+        } else {
+            console.log(result);
+        }
+        res.render("../public/movies.ejs", {record: result});
+    });
+
 });
 
 // // Serve static files
 // app.use(express.static('./public'));
 
 app.get("/movies/new", function (req,res) {
-    //res.sendFile(path.join(__dirname.substring(0,__dirname.length - 2) + "moviesForm.ejs"));
-    //res.render("/var/www/html/moviesForm.ejs");
+
     res.render("../public/moviesForm.ejs");
 });
 
@@ -63,11 +72,6 @@ app.post("/movies", function(req,res){
         picture    : req.body.picture
     };
 
-    // var title     = req.body.title;
-    // var studio    = req.body.studio;
-    // var year      = req.body.year;
-    // var boxOffice = req.body.boxOffice;
-    // var poster    = req.body.poster;
     var problem   = false;
 
 
@@ -93,7 +97,7 @@ app.post("/movies", function(req,res){
         }
     });
 
-    //res.redirect("/movies");
+    res.redirect("/movies");
 });
 
 app.listen(8000,'198.199.116.102',function () {
