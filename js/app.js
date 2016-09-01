@@ -132,16 +132,13 @@ app.get("/movies/:id/delete", function (req,res) {
     var id = req.params.id;
     // var conf = confirm("Are you sure you want to delete this movie from the database?");
 
-
     connection.query('DELETE FROM movie_list WHERE movie_id=' + id, function(error, result, fields) {
         if (error) {
             console.log(error.message);
         } else {
-            console.log(result);
-            res.render("movieUpdate.ejs",{results:result[0]});
+            console.log("succes");
         }
     });
-
     res.redirect("/movies");
 
 });
