@@ -102,7 +102,7 @@ app.get("/movies/:id/edit", function (req,res) {
     });
 });
 
-app.put("/movies/:id/", function (req,res) {
+app.post("/movies/:id/", function (req,res) {
     var id        = req.params.id;
     var title     = req.params.title;
     var studio    = req.params.studio;
