@@ -67,7 +67,7 @@ app.post("/movies", function(req,res){
         studio    : req.body.studio,
         year      : req.body.year,
         boxOffice : req.body.boxOffice,
-        picture    : req.body.picture
+        picture   : req.body.picture
     };
 
     var problem   = false;
@@ -104,14 +104,14 @@ app.get("/movies/:id/edit", function (req,res) {
 
 app.post("/movies/:id/", function (req,res) {
     var id        = req.params.id;
-    var title     = req.params.title;
-    var studio    = req.params.studio;
-    var year      = req.params.year;
-    var boxOffice = req.params.boxOffice;
-    var picture   = req.params.picture;
+    var title     = req.body.title;
+    var studio    = req.body.studio;
+    var year      = req.body.year;
+    var boxOffice = req.body.boxOffice;
+    var picture   = req.body.picture;
 
-    console.log(req.params);
-    
+    console.log(req.body);
+
     var sqlQuery =
           " UPDATE movie_list"
         + " SET title= '" + title + "',studio='" + studio + "' ,year='" + year + "', boxOffice='" + boxOffice + "' ,picture='" + picture
