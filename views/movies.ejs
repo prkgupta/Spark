@@ -6,60 +6,33 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="http://198.199.116.102/css/main.css"> 
+    <link rel="stylesheet" href="http://198.199.116.102/css/main.css">
+    <script type="text/javascript" src="paging.js"></script>  
+    <script type="text/javascript" src="http://198.199.116.102/js/paging.js"></script>  
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="paging.js"></script>  
-    <script type="text/javascript" src="http://198.199.116.102/js/paging.js"></script>     
     <!--<script type="text/javascript" src="http://198.199.116.102/js/main.js"></script>-->
-
-<style type="text/css">
-
-.paging-nav {
-  text-align: right;
-  padding-top: 2px;
-}
-
-.paging-nav a {
-  margin: auto 1px;
-  text-decoration: none;
-  display: inline-block;
-  padding: 1px 7px;
-  background: #91b9e6;
-  color: white;
-  border-radius: 3px;
-}
-
-.paging-nav .selected-page {
-  background: #187ed5;
-  font-weight: bold;
-}
-
-.paging-nav{
-  width: 400px;
-  margin: 0 auto;
-  font-family: Arial, sans-serif;
-}
-</style>       
-
-
 </head>
 <body>
 <div class="container">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="http://198.199.116.102">CSE 135 --
-                HW 3</a>
+                <a class="navbar-brand" href="http://198.199.116.102">CSE 135 -- HW 2</a>
             </div>
         </div>
     </nav>
     <div class="container">
         <table id="tableData" class="table table-striped">
+<<<<<<< HEAD
             <thead>
 	    <tr>
+=======
+        <thead> 
+            <tr>
+>>>>>>> 181c3c010601b6d17acb79c9e92817a1edf9370c
                 <th>Rank</th>
                 <th>Title</th>
                 <th>Studio</th>
@@ -68,7 +41,11 @@
                 <th>Poster</th>
                 <th>Update</th>
             </tr>
+<<<<<<< HEAD
 	    </thead>
+=======
+        </thead> 
+>>>>>>> 181c3c010601b6d17acb79c9e92817a1edf9370c
             <tbody>
                 <% var i = 0; results.forEach(function (record) { %>
                 <tr id="row<%=i+1%>">
