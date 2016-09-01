@@ -31,7 +31,11 @@ Click the buttom on the bottom left side of the page named "Add Record" which
 will bring you to a form to add a new movie into our database.
 
 How to edit:
-Click the "Update" buttom of the movie you want to edit.
+Click the "Update" button of the movie you want to edit.
+
+How to delete:
+Click the "Delete" button to delete the movie. You will be prompted before
+deleting the movie.
 
 
 
