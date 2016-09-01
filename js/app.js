@@ -97,7 +97,7 @@ app.get("/movies/:id/edit", function (req,res) {
         if (error) {
             console.log(error.message);
         } else {
-            res.render("movieUpdates.ejs",{results:result});
+            res.render("movieUpdate.ejs",{results:result});
         }
     });
 });
