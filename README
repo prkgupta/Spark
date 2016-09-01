@@ -15,7 +15,8 @@ Login to webpage: username: user
 
 
 For Homework #3 we used MySQL and NodeJS in order to display a list of movie
-data in our website. Link to our movie list: http://198.199.116.102:8000/movies  
+data in our website. Link to our movie list: http://198.199.116.102:8000/movies
+
 Pagination support:
 On the bottom of the list, you can search through the various movies. 
 This is done using JavaScript to limit the amount of rows displayed on each
