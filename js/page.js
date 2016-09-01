@@ -4,7 +4,6 @@
 
 //table page limit
 $(document).ready(function() {
-    $('.itemsPerPage')    
     //$('#tableData').paging({limit:5});
 });
 
