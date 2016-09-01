@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d9c94323-56c0-4284-b969-17ae72fb66d2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
     </list>
     <ignored path="Spark2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -360,14 +359,7 @@
       <workItem from="1471143845039" duration="29212000" />
       <workItem from="1472431152211" duration="9722000" />
       <workItem from="1472598276925" duration="12003000" />
-      <workItem from="1472662896505" duration="24670000" />
-    </task>
-    <task id="LOCAL-00050" summary="trying to make path work">
-      <created>1472604874084</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1472604874084</updated>
+      <workItem from="1472662896505" duration="24707000" />
     </task>
     <task id="LOCAL-00051" summary="package.json added">
       <created>1472610579451</created>
@@ -705,11 +697,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472694501607</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="edit form&#10;">
+      <created>1472694574090</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1472694574090</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75607000" />
+    <option name="totallyTimeSpent" value="75644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
