@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d9c94323-56c0-4284-b969-17ae72fb66d2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/movieUpdate.ejs" afterPath="$PROJECT_DIR$/views/movieUpdate.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/movies.ejs" afterPath="$PROJECT_DIR$/views/movies.ejs" />
     </list>
     <ignored path="Spark2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +28,8 @@
       <file leaf-file-name="movies.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/movies.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
+            <state relative-caret-position="394">
+              <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
               <folding>
                 <element signature="n#style#0;n#td#8;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -60,8 +60,8 @@
       <file leaf-file-name="movieUpdate.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/movieUpdate.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+            <state relative-caret-position="44">
+              <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -156,9 +156,9 @@
         <option value="$PROJECT_DIR$/public/movieUpdate.ejs" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/public/movies.ejs" />
+        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/views/movies.ejs" />
         <option value="$PROJECT_DIR$/views/movieUpdate.ejs" />
-        <option value="$PROJECT_DIR$/js/app.js" />
       </list>
     </option>
   </component>
@@ -362,14 +362,7 @@
       <workItem from="1471143845039" duration="29212000" />
       <workItem from="1472431152211" duration="9722000" />
       <workItem from="1472598276925" duration="12003000" />
-      <workItem from="1472662896505" duration="25450000" />
-    </task>
-    <task id="LOCAL-00055" summary="Testing mysql fuctionality">
-      <created>1472617131243</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1472617131243</updated>
+      <workItem from="1472662896505" duration="25571000" />
     </task>
     <task id="LOCAL-00056" summary="Testing mysql fuctionality">
       <created>1472617194096</created>
@@ -707,11 +700,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472695201376</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="edit form&#10;">
+      <created>1472695357152</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1472695357152</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76387000" />
+    <option name="totallyTimeSpent" value="76508000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
@@ -1083,21 +1083,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/movies.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#td#8;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/moviesForm.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/movies.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#td#8;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1111,8 +1111,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/movieUpdate.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+        <state relative-caret-position="44">
+          <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
           <folding />
         </state>
       </provider>
