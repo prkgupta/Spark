@@ -27,8 +27,8 @@
       <file leaf-file-name="movies.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/movies.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="110" column="9" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+            <state relative-caret-position="394">
+              <caret line="109" column="17" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#td#8;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -434,14 +434,7 @@
       <workItem from="1471143845039" duration="29212000" />
       <workItem from="1472431152211" duration="9722000" />
       <workItem from="1472598276925" duration="12003000" />
-      <workItem from="1472662896505" duration="30813000" />
-    </task>
-    <task id="LOCAL-00064" summary="showing the movies in a table">
-      <created>1472671985778</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1472671985778</updated>
+      <workItem from="1472662896505" duration="31171000" />
     </task>
     <task id="LOCAL-00065" summary="showing the movies in a table">
       <created>1472672818734</created>
@@ -779,11 +772,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472703621497</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="delete confirmation">
+      <created>1472704414614</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1472704414614</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81750000" />
+    <option name="totallyTimeSpent" value="82108000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="2" width="1924" height="1038" extended-state="0" />
@@ -820,7 +820,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="perl part 1" />
     <MESSAGE value="html update&#10;" />
     <MESSAGE value="html validation&#10;" />
     <MESSAGE value="README is updated for part 1-3&#10;" />
@@ -845,7 +844,8 @@
     <MESSAGE value="edit form&#10;" />
     <MESSAGE value="Update to database&#10;" />
     <MESSAGE value="Delete button functionality&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete button functionality&#10;" />
+    <MESSAGE value="delete confirmation" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete confirmation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1189,8 +1189,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/movies.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="110" column="9" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+        <state relative-caret-position="394">
+          <caret line="109" column="17" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#td#8;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
