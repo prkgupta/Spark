@@ -58,6 +58,7 @@
     </nav>
     <div class="container">
         <table id="tableData" class="table table-striped">
+         <tbody>
             <tr>
                 <th>Rank</th>
                 <th>Title</th>
@@ -67,6 +68,7 @@
                 <th>Poster</th>
                 <th>Update</th>
             </tr>
+          </tbody>
             <tbody>
                 <% var i = 0; results.forEach(function (record) { %>
                 <tr id="row<%=i+1%>">
@@ -105,7 +107,7 @@
 
 <script type="text/javascript">
     $(document).ready(function() {
-            $('#tableData').paging({limit:5});
+            $('#tableData').paging({limit:});
     });
 </script>   
 
