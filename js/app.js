@@ -67,11 +67,11 @@ app.post("/movies", function(req,res){
     //data validation
     if(record.year.length != 4 || isNaN(record.year) || record.year < 1800 || record.year > 2020){
         res.render("badYear.ejs");
-        problem = truee;
+        problem = true;
     }
 
-    if(isNaN(record.boxOffice)){
-        res.send("Please input a number for boxOffice. (With no $)");
+    if(isNaN(record.boxOffice) || record.boxOffice > 10000){
+        res.render("badBoxOffice.ejs");
         problem = true;
     }
 
@@ -107,22 +107,34 @@ app.post("/movies/:id/", function (req,res) {
     var boxOffice = req.body.boxOffice;
     var picture   = req.body.picture;
 
-    console.log(req.body);
+    var problem   = false;
 
-    var sqlQuery =
-          " UPDATE movie_list"
-        + " SET title= '" + title + "',studio='" + studio + "' ,year='" + year + "', boxOffice='" + boxOffice + "' ,picture='" + picture
-        + "' WHERE movie_id=" + id + ";";
+    //data validation
+    if(year.length != 4 || isNaN(year) || year < 1800 || year > 2020){
+        res.render("badYear.ejs");
+        problem = true;
+    }
 
-    connection.query(sqlQuery, function(error, result, fields) {
-        if (error) {
-            console.log(error.message);
-        } else {
-            console.log('success');
-        }
-    });
+    if(isNaN(boxOffice) || boxOffice > 10000){
+        res.render("badBoxOffice.ejs");
+        problem = true;
+    }
 
-    res.redirect("/movies")
+    if(!problem){
+        var sqlQuery =
+            " UPDATE movie_list"
+            + " SET title= '" + title + "',studio='" + studio + "' ,year='" + year + "', boxOffice='" + boxOffice + "' ,picture='" + picture
+            + "' WHERE movie_id=" + id + ";";
+
+        connection.query(sqlQuery, function(error, result, fields) {
+            if (error) {
+                console.log(error.message);
+            } else {
+                console.log('success');
+            }
+        });
+        res.redirect("/movies");
+    }
 });
 
 app.get("/movies/:id/delete", function (req,res) {
