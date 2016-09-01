@@ -92,11 +92,11 @@ app.post("/movies", function(req,res){
 
 app.get("/movies/:id/edit", function (req,res) {
     var id = req.params.id;
-    console.log(id);
     connection.query('SELECT * FROM movie_list WHERE movie_id=' + id, function(error, result, fields) {
         if (error) {
             console.log(error.message);
         } else {
+            console.log("results");
             res.render("movieUpdate.ejs",{results:result});
         }
     });

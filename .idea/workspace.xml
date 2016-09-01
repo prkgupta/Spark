@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c94323-56c0-4284-b969-17ae72fb66d2" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/form.ejs" afterPath="$PROJECT_DIR$/views/form.ejs" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/home.ejs" afterPath="$PROJECT_DIR$/views/home.ejs" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/movieUpdate.ejs" afterPath="$PROJECT_DIR$/views/movieUpdate.ejs" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/movies.ejs" afterPath="$PROJECT_DIR$/views/movies.ejs" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/moviesForm.ejs" afterPath="$PROJECT_DIR$/views/moviesForm.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
     </list>
@@ -54,8 +49,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+            <state relative-caret-position="506">
+              <caret line="93" column="27" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -64,7 +59,7 @@
       <file leaf-file-name="movieUpdate.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/movieUpdate.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
+            <state relative-caret-position="110">
               <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding />
             </state>
@@ -364,21 +359,7 @@
       <workItem from="1471143845039" duration="29212000" />
       <workItem from="1472431152211" duration="9722000" />
       <workItem from="1472598276925" duration="12003000" />
-      <workItem from="1472662896505" duration="23689000" />
-    </task>
-    <task id="LOCAL-00046" summary="trying to make path work">
-      <created>1472604160627</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1472604160627</updated>
-    </task>
-    <task id="LOCAL-00047" summary="trying to make path work">
-      <created>1472604273450</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1472604273450</updated>
+      <workItem from="1472662896505" duration="24514000" />
     </task>
     <task id="LOCAL-00048" summary="trying to make path work">
       <created>1472604498872</created>
@@ -709,11 +690,25 @@
       <option name="project" value="LOCAL" />
       <updated>1472693403453</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="views&#10;">
+      <created>1472693598888</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1472693598888</updated>
+    </task>
+    <task id="LOCAL-00096" summary="views&#10;">
+      <created>1472694152322</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1472694152322</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74626000" />
+    <option name="totallyTimeSpent" value="75451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
@@ -750,7 +745,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Form with Node js attempt 2" />
     <MESSAGE value="Perl files for part 2 and 3 are updated" />
     <MESSAGE value="Perl files for part 1 and 2 are updated" />
     <MESSAGE value="perl files for part 1 and 3" />
@@ -775,7 +769,8 @@
     <MESSAGE value="test git&#10;" />
     <MESSAGE value="moved the script to ejs file&#10;" />
     <MESSAGE value="buttons&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="buttons&#10;" />
+    <MESSAGE value="views&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="views&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1077,14 +1072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/movieUpdate.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/moviesForm.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1111,10 +1098,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/movieUpdate.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+        <state relative-caret-position="506">
+          <caret line="93" column="27" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
           <folding />
         </state>
       </provider>
