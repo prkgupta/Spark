@@ -112,6 +112,7 @@ app.post("/movies/:id/", function (req,res) {
     //data validation
     if(year.length != 4 || isNaN(year) || year < 1800 || year > 2020){
         res.render("badYear.ejs");
+        console.log("bad year from update");
         problem = true;
     }
 

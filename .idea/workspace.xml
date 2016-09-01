@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c94323-56c0-4284-b969-17ae72fb66d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/badBoxOffice.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
     </list>
@@ -40,8 +39,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="136" column="5" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
+            <state relative-caret-position="215">
+              <caret line="114" column="44" selection-start-line="114" selection-start-column="44" selection-end-line="114" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -472,14 +471,7 @@
       <workItem from="1471143845039" duration="29212000" />
       <workItem from="1472431152211" duration="9722000" />
       <workItem from="1472598276925" duration="12003000" />
-      <workItem from="1472662896505" duration="35080000" />
-    </task>
-    <task id="LOCAL-00076" summary="testing the edit records and update route">
-      <created>1472686832069</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1472686832069</updated>
+      <workItem from="1472662896505" duration="35293000" />
     </task>
     <task id="LOCAL-00077" summary="testing the edit records and update route">
       <created>1472687075544</created>
@@ -817,11 +809,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472708153940</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="Data Validation mostly done">
+      <created>1472708689728</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1472708689728</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86017000" />
+    <option name="totallyTimeSpent" value="86230000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -858,7 +857,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="README is updated for part 1-3&#10;" />
     <MESSAGE value="first button added&#10;" />
     <MESSAGE value="First and Second button added." />
     <MESSAGE value="Basic functionality of the movie form" />
@@ -883,7 +881,8 @@
     <MESSAGE value="delete confirmation" />
     <MESSAGE value="moving out scripts" />
     <MESSAGE value="Bad Year" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bad Year" />
+    <MESSAGE value="Data Validation mostly done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Data Validation mostly done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1263,8 +1262,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="136" column="5" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
+        <state relative-caret-position="215">
+          <caret line="114" column="44" selection-start-line="114" selection-start-column="44" selection-end-line="114" selection-end-column="44" />
           <folding />
         </state>
       </provider>
