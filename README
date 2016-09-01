@@ -13,20 +13,25 @@ Login to webpage: username: user
 404 Error (occurs with any random page)
 403 Error (go to http://198.199.116.102/private)
 
-We implemented all the Node JS parts, even though they are not going to be graded. The node server is running. If for
-some reason it stops running it can be ran again using the command "node /var/www/html/js/app.js "
 
-We used ejs (embedded Javascript) files for all the node views to combine html and backend javascript.
+For Homework #3 we used MySQL and NodeJS in order to display a list of movie
+data in our website. Link to our movie list: http://198.199.116.102:8000/movies  
+Pagination support:
+On the bottom of the list, you can search through the various movies. 
+This is done using JavaScript to limit the amount of rows displayed on each
+page.
 
-Part 1: We used the corresponding date() function for every language to display current time. Random background color
-is generated using a random number generator from 0 to 2 and assign a color for each number.
+How to sort:
+Sort the columns by clicking the top headers (such as title, year) and it will
+automatically sort in ascending or decending order. It is done using jQuery with
+a function called tablesort. 
 
-Part 2: All languages have a variable consisting of all the environment variables.
+How to add:
+Click the buttom on the bottom left side of the page named "Add Record" which
+will bring you to a form to add a new movie into our database.
 
-Part 3: Each part of our form has a field name that can be used in the backend to retrieve their values from the post
-request. The last dropdown menu chooses which of the 3 languages (Perl, PHP, JS) is used to display the user's info. Our
-frontend script is located at js/main.js.
+How to edit:
+Click the "Update" buttom of the movie you want to edit.
 
-Part 4: Part 4 has two session pages. Session1 (page 1) asks for the user's name and stores it into a session using PHP session or Perl CGI session. Afterwards, session 2 grabs this data from the same session and displays it on the page with the user's information. If the user did not add any information in Session1, then in Session2 it will display a different text to the user, telling the user to go to Session1 to input their name. On Session2, the user can also press the button to clear session data.
 
 
