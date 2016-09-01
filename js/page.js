@@ -9,7 +9,8 @@ $(document).ready(function() {
 
 function page(){
     var limit = $('.itemsPerPage').value;
-    limit = limit == all? 1000000 : limit;
+    limit = limit == 'all'? 1000000 : limit;
+    console.log("limit is " + limit);
     $('#tableData').paging({limit:limit});
 }
 
