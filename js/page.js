@@ -3,9 +3,9 @@
  */
 
 //table page limit
-$(document).ready(function() {
-        $('#tableData').paging({limit:5});
-});  
+// $(document).ready(function() {
+//         $('#tableData').paging({limit:5});
+// });
 
 //table sort
 $(document).ready(function() { 
