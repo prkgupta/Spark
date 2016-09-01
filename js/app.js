@@ -64,23 +64,27 @@ app.post("/movies", function(req,res){
 
     var problem   = false;
 
-    //data validation TODO
-    if(record.year.length != 4 || isNaN(record.year) || record.year < 1800 || record.year > 2020)
-        //res.send("Please input a 4-digit number for year.");
+    //data validation
+    if(record.year.length != 4 || isNaN(record.year) || record.year < 1800 || record.year > 2020){
         res.render("badYear.ejs");
+        problem = truee;
+    }
 
-    if(isNaN(record.boxOffice))
+    if(isNaN(record.boxOffice)){
         res.send("Please input a number for boxOffice. (With no $)");
+        problem = true;
+    }
 
-    connection.query('INSERT INTO movie_list SET ?', record, function(error) {
-        if (error) {
-            console.log(error.message);
-        } else {
-            console.log('success');
-        }
-    });
-
-    res.redirect("/movies");
+    if(!problem){
+        connection.query('INSERT INTO movie_list SET ?', record, function(error) {
+            if (error) {
+                console.log(error.message);
+            } else {
+                console.log('success');
+            }
+        });
+        res.redirect("/movies");
+    }
 });
 
 app.get("/movies/:id/edit", function (req,res) {
