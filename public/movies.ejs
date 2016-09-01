@@ -79,7 +79,8 @@
                     <td><%= record.boxOffice %></td>
                     <td><%= record.year %></td>
                     <td><img class="poster" src="<%=record.picture%>" alt="<%=record.title%>"></td>
-                    <td><button type="button" class="updateButton">Update</button></td>
+                    <td><button type="button" class="updateButton btn btn-default">Update</button></td>
+                    <td><button type="button" class="deleteButton btn btn-danger">Delete</button></td>
                     <td style="display:none"><%=record.movie_id%></td>
                 </tr>
                 <%});%>
