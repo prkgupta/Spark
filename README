@@ -15,7 +15,29 @@ Login to webpage: username: user
 
 
 For Homework #3 we used MySQL and NodeJS in order to display a list of movie
-data in our website. Link to our movie list: http://198.199.116.102:8000/movies
+data in our website.
+Link to our homepage : http://198.199.116.102
+Click on the last button to go to our movie list, or use the url below
+Link to our movie list: http://198.199.116.102:8000/movies
+
+If for any reason server stopped working it can easily be run again with the command "node /var/www/html/js/app.js"
+
+We used a few npm packages including:
+express: to serve http requests
+mysql: for database manipulation
+bodyparser: helper package that used to be part of express
+ejs: to interact with our template files (.ejs)
+
+We used restful routes to create, read, update and destroy data.
+/movies             GET     View
+/movies/new         GET     New
+/movies             POST    Create
+/movies/:id/edit    GET     Edit
+/movies/:id         PUT     Update
+/movies/:id         DELETE  Destroy
+
+On front end we used twitter bootstrap for a nice presentation of the data. Using the bootstrap grid system, everything
+is completely responsive, mobile friendly, and adjusted and lined up based on the display size.
 
 Pagination support:
 On the bottom of the list, you can search through the various movies. 
