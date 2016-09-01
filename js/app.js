@@ -66,7 +66,8 @@ app.post("/movies", function(req,res){
 
     //data validation TODO
     if(record.year.length != 4 || isNaN(record.year) || record.year < 1800 || record.year > 2020)
-        res.send("Please input a 4-digit number for year.");
+        //res.send("Please input a 4-digit number for year.");
+        res.render("badYear.html");
 
     if(isNaN(record.boxOffice))
         res.send("Please input a number for boxOffice. (With no $)");
