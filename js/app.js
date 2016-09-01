@@ -26,14 +26,14 @@ connection.connect();
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/node", function (req,res) {
-    res.render("../home.ejs");
+    res.render("home.ejs");
 });
 
 app.post("/form", function (req,res){
     var fname = req.body.fname;
     var lname = req.body.lname;
     var color = req.body.color;
-    res.render("../form.ejs",{fname:fname, lname:lname, color:color});
+    res.render("form.ejs",{fname:fname, lname:lname, color:color});
 });
 
 app.get("/env", function(req,res){
@@ -48,17 +48,17 @@ app.get("/movies", function(req,res){
         if (error) {
             console.log(error.message);
         } else {
-            res.render("../public/movies.ejs", {results: result});
+            res.render("movies.ejs", {results: result});
         }
     });
 });
 
 // // Serve static files
-// app.use(express.static('./public'));
+// app.use(express.static('./views'));
 
 app.get("/movies/new", function (req,res) {
 
-    res.render("../public/moviesForm.ejs");
+    res.render("moviesForm.ejs");
 });
 
 app.post("/movies", function(req,res){
@@ -97,7 +97,7 @@ app.get("/movies/:id/edit", function (req,res) {
         if (error) {
             console.log(error.message);
         } else {
-            res.render("../public/movieUpdates.ejs",{results:result});
+            res.render("movieUpdates.ejs",{results:result});
         }
     });
 });
