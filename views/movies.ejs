@@ -15,7 +15,7 @@
     <script type="text/javascript" src="http://198.199.116.102/js/paging.js"></script>     
     <script type="text/javascript" src="http://198.199.116.102/js/jquery.tablesorter.js"></script>   
         <script type="text/javascript" src="../js/jquery.tablesorter.js"></script>           
-    <!--<script type="text/javascript" src="http://198.199.116.102/js/main.js"></script>-->
+
 
 <style type="text/css">
 
@@ -69,6 +69,7 @@
                 <th>Year</th>
                 <th>Poster</th>
                 <th>Update</th>
+                <th>Delete</th>
             </tr>
 	    </thead>
             <tbody>
@@ -95,24 +96,26 @@
     </div>
 </div>
 
-<script>
-    $('.updateButton').click(function(){
-        console.log("update button is clicked");
-        var id = $(this).next().value;
-        location.href="http://198.199.116.102:8000/movies/" + id + "/edit";
-    });
-    $('.deleteButton').click(function(event){
-        console.log("delete button is clicked");
-        var id = $(this).next().value;
-        var conf = confirm("Are you sure you want to delete this movie from the database?");
-        if(conf){
-            location.href="http://198.199.116.102:8000/movies/" + id + "/edit";
-        }
-        else{
-            event.preventDefault();
-        }
-    });
-</script>
+<script type="text/javascript" src="http://198.199.116.102/js/buttons.js"></script>
+
+<!--<script>-->
+    <!--$('.updateButton').click(function(){-->
+        <!--console.log("update button is clicked");-->
+        <!--var id = $(this).next().value;-->
+        <!--location.href="http://198.199.116.102:8000/movies/" + id + "/edit";-->
+    <!--});-->
+    <!--$('.deleteButton').click(function(event){-->
+        <!--console.log("delete button is clicked");-->
+        <!--var id = $(this).next().value;-->
+        <!--var conf = confirm("Are you sure you want to delete this movie from the database?");-->
+        <!--if(conf){-->
+            <!--location.href="http://198.199.116.102:8000/movies/" + id + "/edit";-->
+        <!--}-->
+        <!--else{-->
+            <!--event.preventDefault();-->
+        <!--}-->
+    <!--});-->
+<!--</script>-->
 
 <script type="text/javascript">
     $(document).ready(function() {
