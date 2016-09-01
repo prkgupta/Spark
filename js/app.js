@@ -111,9 +111,9 @@ app.post("/movies/:id/", function (req,res) {
     var picture   = req.params.picture;
 
     var sqlQuery =
-          ' UPDATE movie_list'
-        + ' SET title=' + title + ',studio=' + studio + ' ,year=' + year + ', boxOffice=' + boxOffice + ' ,picture=' + picture
-        + ' WHERE movie_id=' + id;
+          " UPDATE movie_list"
+        + " SET title=" + title + ",studio=" + studio + " ,year=" + year + ", boxOffice=" + boxOffice + " ,picture=" + picture
+        + " WHERE movie_id=" + id + ";";
 
     connection.query(sqlQuery, function(error, result, fields) {
         if (error) {
