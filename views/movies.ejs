@@ -102,7 +102,13 @@
     $('.deleteButton').click(function(){
         console.log("delete button is clicked");
         var id = $(this).next().value;
-        location.href="http://198.199.116.102:8000/movies/" + id + "/edit";
+        var conf = confirm("Are you sure you want to delete this movie from the database?");
+        if(conf){
+            location.href="http://198.199.116.102:8000/movies/" + id + "/edit";
+        }
+        else{
+            this.preventDefault();
+        }
     });
 </script>
 
