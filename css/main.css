@@ -1,9 +1,10 @@
 #note{
     font-size: smaller;
-    color: #1F6511
+    color: #1F6511;
 }
 body {
     padding-top: 65px;
+    padding-bottom: 40px;
 }
 .poster{
     max-width: 100px;

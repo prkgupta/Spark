@@ -8,10 +8,10 @@ $(document).ready(function() {
 });
 
 function page(){
-    var limit = $('.itemsPerPage').value;
-    limit = limit == 'all'? 1000000 : limit;
-    console.log("limit is " + limit);
-    $('#tableData').paging({limit:limit});
+    var pageLimit = $('.itemsPerPage').value;
+    pageLimit = pageLimit == 'all'? 1000000 : pageLimit;
+    console.log("limit is " + pageLimit);
+    $('#tableData').paging({limit:pageLimit});
 }
 
 //table sort

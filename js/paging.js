@@ -2,7 +2,7 @@
     $(function() {
         $.widget("zpd.paging", {
             options: {
-                limit: 10,
+                limit: 5,
                 rowDisplayStyle: 'block',
                 activePage: 0,
                 rows: []
