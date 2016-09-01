@@ -16,13 +16,6 @@ var connection  = mysql.createConnection({
 
 connection.connect();
 
-// connection.query('SELECT * from < table name >', function(err, rows, fields) {
-//     if (!err)
-//         console.log('The solution is: ', rows);
-//     else
-//         console.log('Error while performing Query.');
-// });
-
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/node", function (req,res) {
@@ -42,7 +35,6 @@ app.get("/env", function(req,res){
 
 // hw3 routes
 app.get("/movies", function(req,res){
-   //res.send("Movies route is working");
     //Get the data from the database
     connection.query('SELECT * FROM movie_list', function(error, result, fields) {
         if (error) {
@@ -73,7 +65,7 @@ app.post("/movies", function(req,res){
     var problem   = false;
 
     //data validation TODO
-    if(record.year.length != 4 || isNaN(record.year))
+    if(record.year.length != 4 || isNaN(record.year) || record.year < 1800 || record.year > 2020)
         res.send("Please input a 4-digit number for year.");
 
     if(isNaN(record.boxOffice))
@@ -136,7 +128,7 @@ app.get("/movies/:id/delete", function (req,res) {
         if (error) {
             console.log(error.message);
         } else {
-            console.log("succes");
+            console.log("success");
         }
     });
     res.redirect("/movies");
