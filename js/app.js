@@ -110,6 +110,8 @@ app.post("/movies/:id/", function (req,res) {
     var boxOffice = req.params.boxOffice;
     var picture   = req.params.picture;
 
+    console.log(req.params);
+    
     var sqlQuery =
           " UPDATE movie_list"
         + " SET title= '" + title + "',studio='" + studio + "' ,year='" + year + "', boxOffice='" + boxOffice + "' ,picture='" + picture
