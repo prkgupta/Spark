@@ -4,7 +4,6 @@
     <list default="true" id="d9c94323-56c0-4284-b969-17ae72fb66d2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/movieUpdate.ejs" afterPath="$PROJECT_DIR$/views/movieUpdate.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/movies.ejs" afterPath="$PROJECT_DIR$/views/movies.ejs" />
     </list>
     <ignored path="Spark2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/views/movieUpdate.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="44">
-              <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
+              <caret line="30" column="78" selection-start-line="30" selection-start-column="78" selection-end-line="30" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -362,14 +361,7 @@
       <workItem from="1471143845039" duration="29212000" />
       <workItem from="1472431152211" duration="9722000" />
       <workItem from="1472598276925" duration="12003000" />
-      <workItem from="1472662896505" duration="25571000" />
-    </task>
-    <task id="LOCAL-00056" summary="Testing mysql fuctionality">
-      <created>1472617194096</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1472617194096</updated>
+      <workItem from="1472662896505" duration="25643000" />
     </task>
     <task id="LOCAL-00057" summary="Testing mysql fuctionality">
       <created>1472617285116</created>
@@ -707,11 +699,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472695357152</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="edit form&#10;">
+      <created>1472695478277</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1472695478277</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76508000" />
+    <option name="totallyTimeSpent" value="76580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
@@ -1112,7 +1111,7 @@
     <entry file="file://$PROJECT_DIR$/views/movieUpdate.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
-          <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
+          <caret line="30" column="78" selection-start-line="30" selection-start-column="78" selection-end-line="30" selection-end-column="78" />
           <folding />
         </state>
       </provider>
