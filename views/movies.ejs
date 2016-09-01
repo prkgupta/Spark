@@ -82,13 +82,14 @@
                     <!--<td><button type="button" class="deleteButton btn btn-danger">Delete</button></td>-->
                     <td><a href="http://198.199.116.102:8000/movies/<%=record.movie_id%>/edit"
                            class="updateButton btn btn-default">Update</a></td>
-                    <td><a href="http://198.199.116.102:8000/movies/<%=record.movie_id%>/edit"
+                    <td><a href="http://198.199.116.102:8000/movies/<%=record.movie_id%>/delete"
                            class="deleteButton btn btn-danger">Delete</a></td>
                     <td style="display:none"><%=record.movie_id%></td>
                 </tr>
                 <%});%>
             </tbody>
         </table>
+        <a href="http://198.199.116.102:8000/movies/new" class="btn btn-primary">Add Record</a>
     </div>
 </div>
 

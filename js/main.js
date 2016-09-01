@@ -29,11 +29,11 @@ function changeSubmitForSession(){
     }
 }
 
-$('.updateButton').click(function(){
-    console.log("update button is clicked");
-    var id = $(this).next().value;
-    location.href="http://198.199.116.102:8000/movies/" + id + "/edit";
-});
+// $('.updateButton').click(function(){
+//     console.log("update button is clicked");
+//     var id = $(this).next().value;
+//     location.href="http://198.199.116.102:8000/movies/" + id + "/edit";
+// });
 
 // $('.deleteButton').click(function(){
 //     console.log("delete button is clicked");
